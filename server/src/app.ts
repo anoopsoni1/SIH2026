@@ -15,7 +15,10 @@ app.use(helmet());
 // Cross-Origin Resource Sharing
 app.use(
   cors({
-    origin: config.corsOrigin === '*' ? true : (config.corsOrigin || true),
+    origin: (origin, callback) => {
+      // Dynamically reflect requesting origin (e.g. https://sahyog.co-vid.in, localhost)
+      callback(null, true);
+    },
     credentials: true,
   })
 );

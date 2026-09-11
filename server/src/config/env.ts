@@ -26,5 +26,5 @@ export const config = {
     keySecret: process.env.RAZORPAY_KEY_SECRET || 'rzp_test_coop_secret',
   },
   aiServiceUrl: process.env.AI_SERVICE_URL || 'http://localhost:8000',
-  corsOrigin: process.env.CORS_ORIGIN || 'http://localhost:5173',
+  corsOrigin: process.env.CORS_ORIGIN || '*',
 };
