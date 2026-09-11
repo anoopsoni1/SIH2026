@@ -1,4 +1,4 @@
-import { IPaymentBreakdown } from '../../../shared/src/index';
+import { IPaymentBreakdown } from '../shared/index';
 
 export class WageCalculatorService {
   /**

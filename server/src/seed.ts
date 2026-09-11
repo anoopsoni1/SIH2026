@@ -7,7 +7,7 @@ import { Service } from './models/Service';
 import { WorkerProfile } from './models/WorkerProfile';
 import { Booking } from './models/Booking';
 import { AuthService } from './services/AuthService';
-import { UserRole, WorkerVerificationStatus, BookingStatus, BookingType } from '../../shared/src/index';
+import { UserRole, WorkerVerificationStatus, BookingStatus, BookingType } from './shared/index';
 
 const seedDatabase = async () => {
   try {

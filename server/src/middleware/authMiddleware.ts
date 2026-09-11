@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express';
 import { AuthService } from '../services/AuthService';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 export interface AuthenticatedRequest extends Request {
   user?: {

@@ -5,7 +5,7 @@ import { WorkerProfile } from '../models/WorkerProfile';
 import { Booking } from '../models/Booking';
 import { AuditLog } from '../models/AuditLog';
 import { AuditService } from '../services/AuditService';
-import { WorkerVerificationStatus } from '../../../shared/src/index';
+import { WorkerVerificationStatus } from '../shared/index';
 import { config } from '../config/env';
 
 export class AdminController {

@@ -2,7 +2,7 @@ import { Response } from 'express';
 import { AuthenticatedRequest } from '../middleware/authMiddleware';
 import { WorkerProfile } from '../models/WorkerProfile';
 import { GeoMatchingService } from '../services/GeoMatchingService';
-import { WorkerVerificationStatus } from '../../../shared/src/index';
+import { WorkerVerificationStatus } from '../shared/index';
 
 export class WorkerController {
   static async registerProfile(req: AuthenticatedRequest, res: Response) {

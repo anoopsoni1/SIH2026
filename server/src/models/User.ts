@@ -1,5 +1,5 @@
 import { Schema, model, Document } from 'mongoose';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 export interface IUserDocument extends Document {
   name: string;

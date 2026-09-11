@@ -1,4 +1,4 @@
-import { BookingStatus, UserRole } from '../../../shared/src/index';
+import { BookingStatus, UserRole } from '../shared/index';
 
 const ALLOWED_TRANSITIONS: Record<BookingStatus, BookingStatus[]> = {
   [BookingStatus.PENDING_PAYMENT]: [BookingStatus.PAYMENT_VERIFIED, BookingStatus.CANCELLED_BY_CUSTOMER, BookingStatus.CANCELLED_BY_ADMIN],

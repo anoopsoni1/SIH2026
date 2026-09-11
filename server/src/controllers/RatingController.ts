@@ -3,7 +3,7 @@ import { AuthenticatedRequest } from '../middleware/authMiddleware';
 import { Booking } from '../models/Booking';
 import { Rating } from '../models/Rating';
 import { WorkerProfile } from '../models/WorkerProfile';
-import { BookingStatus } from '../../../shared/src/index';
+import { BookingStatus } from '../shared/index';
 
 export class RatingController {
   static async submitRating(req: AuthenticatedRequest, res: Response) {

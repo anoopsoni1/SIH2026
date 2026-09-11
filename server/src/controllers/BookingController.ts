@@ -7,7 +7,7 @@ import { WageCalculatorService } from '../services/WageCalculatorService';
 import { BookingStateMachine } from '../services/BookingStateMachine';
 import { GeoMatchingService } from '../services/GeoMatchingService';
 import { AuditService } from '../services/AuditService';
-import { BookingStatus, BookingType, UserRole } from '../../../shared/src/index';
+import { BookingStatus, BookingType, UserRole } from '../shared/index';
 
 export class BookingController {
   static async createBooking(req: AuthenticatedRequest, res: Response) {

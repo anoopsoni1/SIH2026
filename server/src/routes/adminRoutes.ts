@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { AdminController } from '../controllers/AdminController';
 import { authenticateJwt } from '../middleware/authMiddleware';
 import { requireRoles } from '../middleware/rbacMiddleware';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 const router = Router();
 

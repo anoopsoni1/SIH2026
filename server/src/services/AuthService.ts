@@ -2,7 +2,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { User, IUserDocument } from '../models/User';
 import { config } from '../config/env';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 export class AuthService {
   static async hashPassword(password: string): Promise<string> {

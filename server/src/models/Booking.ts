@@ -1,5 +1,5 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { BookingStatus, BookingType } from '../../../shared/src/index';
+import { BookingStatus, BookingType } from '../shared/index';
 
 export interface IBookingDocument extends Document {
   bookingNumber: string;

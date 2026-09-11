@@ -1,5 +1,5 @@
 import { WorkerProfile, IWorkerProfileDocument } from '../models/WorkerProfile';
-import { WorkerVerificationStatus } from '../../../shared/src/index';
+import { WorkerVerificationStatus } from '../shared/index';
 import { Types } from 'mongoose';
 
 export interface GeoMatchFilter {

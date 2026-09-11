@@ -1,5 +1,5 @@
 import { AuditLog } from '../models/AuditLog';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 export class AuditService {
   static async logAction(params: {

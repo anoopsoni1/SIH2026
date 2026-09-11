@@ -1,5 +1,5 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 export interface IAuditLogDocument extends Document {
   actorId: Types.ObjectId;

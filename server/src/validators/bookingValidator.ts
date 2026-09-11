@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { BookingType } from '../../../shared/src/index';
+import { BookingType } from '../shared/index';
 
 export const createBookingSchema = z.object({
   body: z.object({

@@ -1,6 +1,6 @@
 import { Response, NextFunction } from 'express';
 import { AuthenticatedRequest } from './authMiddleware';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 export const requireRoles = (...allowedRoles: UserRole[]) => {
   return (req: AuthenticatedRequest, res: Response, next: NextFunction) => {

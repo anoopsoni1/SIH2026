@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 export const registerSchema = z.object({
   body: z.object({

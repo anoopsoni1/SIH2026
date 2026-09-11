@@ -1,5 +1,5 @@
 import { Schema, model, Document, Types } from 'mongoose';
-import { WorkerVerificationStatus } from '../../../shared/src/index';
+import { WorkerVerificationStatus } from '../shared/index';
 import './Society';
 import './User';
 

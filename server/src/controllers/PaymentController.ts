@@ -5,7 +5,7 @@ import { Payment } from '../models/Payment';
 import { RazorpayService } from '../services/RazorpayService';
 import { BookingStateMachine } from '../services/BookingStateMachine';
 import { AuditService } from '../services/AuditService';
-import { BookingStatus, PaymentStatus } from '../../../shared/src/index';
+import { BookingStatus, PaymentStatus } from '../shared/index';
 
 export class PaymentController {
   static async createOrder(req: AuthenticatedRequest, res: Response) {

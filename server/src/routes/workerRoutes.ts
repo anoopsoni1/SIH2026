@@ -4,7 +4,7 @@ import { authenticateJwt } from '../middleware/authMiddleware';
 import { requireRoles } from '../middleware/rbacMiddleware';
 import { validateRequest } from '../middleware/validate';
 import { registerWorkerProfileSchema } from '../validators/workerValidator';
-import { UserRole } from '../../../shared/src/index';
+import { UserRole } from '../shared/index';
 
 const router = Router();
 
