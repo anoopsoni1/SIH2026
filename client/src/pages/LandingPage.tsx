@@ -3,7 +3,7 @@ import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { BookingModal } from '../components/BookingModal';
 import { useTranslation } from 'react-i18next';
-import { Search, ShieldCheck, Zap, Droplet, Hammer, Sparkles, HeartHandshake, PhoneCall, ArrowRight, CheckCircle2, Award, Users } from 'lucide-react';
+import { Search, ShieldCheck, Zap, Droplet, Hammer, Sparkles, HeartHandshake, PhoneCall, ArrowRight, CheckCircle2, Award, Users, Wrench, Paintbrush, Flower2, Car } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export const LandingPage: React.FC = () => {
@@ -48,6 +48,42 @@ export const LandingPage: React.FC = () => {
       unitType: 'fixed',
       description: 'Comprehensive sanitization of kitchen, bathroom, living area and floors.',
       icon: Sparkles,
+    },
+    {
+      _id: '66d8e01b106b7a422f82da05',
+      name: 'Split AC Deep Foam Service',
+      category: 'Appliance Repair',
+      basePrice: 599,
+      unitType: 'fixed',
+      description: 'Jet pump foam wash, filter sanitization, and cooling check.',
+      icon: Wrench,
+    },
+    {
+      _id: '66d8e01b106b7a422f82da06',
+      name: 'Wall Touchup & Room Painting',
+      category: 'Painting',
+      basePrice: 1999,
+      unitType: 'fixed',
+      description: 'Wall putty, primer application, and dual coat Asian Paints finish.',
+      icon: Paintbrush,
+    },
+    {
+      _id: '66d8e01b106b7a422f82da07',
+      name: 'Balcony Garden Maintenance',
+      category: 'Gardening',
+      basePrice: 450,
+      unitType: 'fixed',
+      description: 'Soil aerating, organic fertilizer mixing, and pot trimming.',
+      icon: Flower2,
+    },
+    {
+      _id: '66d8e01b106b7a422f82da08',
+      name: 'Personal City Driver (4 Hours)',
+      category: 'Driver',
+      basePrice: 799,
+      unitType: 'fixed',
+      description: 'Verified hatchback/SUV driver for local city travel and errands.',
+      icon: Car,
     },
   ];
 

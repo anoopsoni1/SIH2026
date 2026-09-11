@@ -81,6 +81,46 @@ const seedDatabase = async () => {
       icon: 'Sparkles',
     });
 
+    const paintingCat = await ServiceCategory.create({
+      name: 'Painting & Renovation',
+      nameHi: 'पेंटिंग सेवाएं',
+      slug: 'painting',
+      description: 'Wall painting, damp treatment, and interior touch-ups.',
+      icon: 'Paintbrush',
+    });
+
+    const applianceCat = await ServiceCategory.create({
+      name: 'Appliance Repair & AC Service',
+      nameHi: 'उपकरण मरम्मत',
+      slug: 'appliance',
+      description: 'AC deep cleaning, gas charging, washing machine & fridge repair.',
+      icon: 'Wrench',
+    });
+
+    const gardeningCat = await ServiceCategory.create({
+      name: 'Gardening & Landscaping',
+      nameHi: 'बागवानी सेवाएं',
+      slug: 'gardening',
+      description: 'Plant pruning, lawn maintenance, and balcony garden setup.',
+      icon: 'Flower2',
+    });
+
+    const careCat = await ServiceCategory.create({
+      name: 'Domestic & Elderly Care',
+      nameHi: 'देखभाल सेवाएं',
+      slug: 'caregiver',
+      description: 'Trained caregivers for elderly assistance and nursing support.',
+      icon: 'HeartHandshake',
+    });
+
+    const driverCat = await ServiceCategory.create({
+      name: 'Driver & Transport Helper',
+      nameHi: 'ड्राइवर सेवाएं',
+      slug: 'driver',
+      description: 'Verified personal drivers and goods loading helpers.',
+      icon: 'Car',
+    });
+
     // 4. Create Services
     const fanRepair = await Service.create({
       categoryId: electricalCat._id,
@@ -120,6 +160,56 @@ const seedDatabase = async () => {
       basePrice: 1499,
       unitType: 'fixed',
       estimatedDurationMinutes: 180,
+    });
+
+    const acService = await Service.create({
+      categoryId: applianceCat._id,
+      name: 'Split AC Deep Cleaning & Filter Wash',
+      nameHi: 'एसी की सर्विसिंग',
+      description: 'Jet pump foam wash, filter cleaning, and cooling check for Split AC.',
+      basePrice: 599,
+      unitType: 'fixed',
+      estimatedDurationMinutes: 60,
+    });
+
+    const wallPainting = await Service.create({
+      categoryId: paintingCat._id,
+      name: 'Single Room Wall Painting & Touchup',
+      nameHi: 'दीवार पेंटिंग',
+      description: 'Wall putty, primer application, and dual coat Asian Paints finish.',
+      basePrice: 1999,
+      unitType: 'fixed',
+      estimatedDurationMinutes: 240,
+    });
+
+    const gardenCare = await Service.create({
+      categoryId: gardeningCat._id,
+      name: 'Balcony Garden Maintenance & Pruning',
+      nameHi: 'बागवानी रखरखाव',
+      description: 'Soil aerating, organic fertilizer mixing, and pot trimming.',
+      basePrice: 450,
+      unitType: 'fixed',
+      estimatedDurationMinutes: 60,
+    });
+
+    const elderlyCare = await Service.create({
+      categoryId: careCat._id,
+      name: 'Elderly Care Assistant (Full Day)',
+      nameHi: 'बुजुर्गों की देखभाल',
+      description: 'Certified caregiver for mobility support, meal assistance, and vital monitoring.',
+      basePrice: 850,
+      unitType: 'per_hour',
+      estimatedDurationMinutes: 480,
+    });
+
+    const driverService = await Service.create({
+      categoryId: driverCat._id,
+      name: 'Personal City Driver (4 Hours)',
+      nameHi: 'व्यक्तिगत ड्राइवर',
+      description: 'Verified hatchback/SUV driver for local city travel and errands.',
+      basePrice: 799,
+      unitType: 'fixed',
+      estimatedDurationMinutes: 240,
     });
 
     // 5. Create Customer

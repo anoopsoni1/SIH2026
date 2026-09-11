@@ -75,6 +75,46 @@ export const ServicesPage: React.FC = () => {
           description: 'Comprehensive sanitization of kitchen, bathroom, living area and floors.',
           categoryId: { name: 'Cleaning Services' },
         },
+        {
+          _id: 'svc_app_01',
+          name: 'Split AC Deep Cleaning & Foam Service',
+          basePrice: 599,
+          unitType: 'fixed',
+          description: 'Jet pump foam wash, filter cleaning, and cooling performance check.',
+          categoryId: { name: 'Appliance Repair & AC Service' },
+        },
+        {
+          _id: 'svc_paint_01',
+          name: 'Single Room Wall Painting & Touchup',
+          basePrice: 1999,
+          unitType: 'fixed',
+          description: 'Wall putty, primer application, and dual coat Asian Paints finish.',
+          categoryId: { name: 'Painting & Renovation' },
+        },
+        {
+          _id: 'svc_gard_01',
+          name: 'Balcony Garden Maintenance & Pruning',
+          basePrice: 450,
+          unitType: 'fixed',
+          description: 'Soil aerating, organic fertilizer mixing, and pot trimming.',
+          categoryId: { name: 'Gardening & Landscaping' },
+        },
+        {
+          _id: 'svc_care_01',
+          name: 'Elderly Care Assistant (Full Day)',
+          basePrice: 850,
+          unitType: 'per_hour',
+          description: 'Certified caregiver for mobility support, meal assistance, and vital monitoring.',
+          categoryId: { name: 'Domestic & Elderly Care' },
+        },
+        {
+          _id: 'svc_driv_01',
+          name: 'Personal City Driver (4 Hours)',
+          basePrice: 799,
+          unitType: 'fixed',
+          description: 'Verified hatchback/SUV driver for local city travel and errands.',
+          categoryId: { name: 'Driver & Transport Helper' },
+        },
       ]);
     } finally {
       setLoading(false);
