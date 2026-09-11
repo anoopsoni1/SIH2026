@@ -15,7 +15,7 @@ app.use(helmet());
 // Cross-Origin Resource Sharing
 app.use(
   cors({
-    origin: config.corsOrigin,
+    origin: config.corsOrigin === '*' ? true : (config.corsOrigin || true),
     credentials: true,
   })
 );
