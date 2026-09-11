@@ -1,0 +1,11 @@
+{
+  "name": "@coop-marketplace/shared",
+  "version": "1.0.0",
+  "description": "Shared TypeScript definitions and interfaces for Cooperative Marketplace",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {}
+}
